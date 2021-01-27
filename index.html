@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontello-12e41320/css/fontello.css" type="text/css" />
+    <link rel="stylesheet" href="style.css">
+    <script defer src="menu.js"></script>
+    <title>WaiterApp</title>
+</head>
+<body>
+    <div id="appetizerPage">
+        <div id="header"><button id="back" class="backButton"><i class="icon-left-big"></i></button></div>
+       
+    </div>
+
+    <div id="soupPage" class="categoryPage">
+        <div id="header"><button id="back2" class="backButton"><i class="icon-left-big"></i></button></div>
+    </div>
+
+    <div id="dishPage" class="categoryPage">
+        <div id="header"><button id="back3" class="backButton"><i class="icon-left-big"></i></button></div>
+    </div>
+
+    <div id="extrasPage" class="categoryPage">
+        <div id="header"><button id="back4" class="backButton"><i class="icon-left-big"></i></button></div>
+    </div>
+
+    <div id="drinkPage" class="categoryPage">
+        <div id="header"><button id="back5" class="backButton"><i class="icon-left-big"></i></button></div>
+    </div>
+
+    <div id="alcoholPage" class="categoryPage">
+        <div id="header"><button id="back6" class="backButton"><i class="icon-left-big"></i></button></div>
+    </div>
+
+
+
+    <div id="container">
+        <div id="header"><a id="HeaderText">Menu</a></div>
+        <div id="menuPage">
+            <label class="switch">
+                <input type="checkbox" id="sliderBox">
+                <span class="slider round"></span>
+              </label>
+              
+            </div>
+            <button class="type" id="appetizer">Przystawki</button>
+            <button class="type" id="soup">Zupy</button>
+            <button class="type" id="dish">Dania głowne</button>
+            <button class="type" id="extras">Dodatki</button>
+            <button class="type" id="drink">Napoje</button>
+            <button class="type" id="alcohol">Alkohole</button>
+        </div>
+        <div id="bill">
+        <p>Zamówienie</p>
+        <div class="billEntries">
+
+        </div>
+    </div>
+        <div id="cost">Należności:</div>
+        <div id="NumberAndDiscount">
+            <span>Stolik nr:</span>
+            <select class = "selectTableNumber">
+                
+                <optgroup label="Parter">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                </optgroup>
+                <optgroup label="Piętro">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option> 
+                </optgroup>  
+            </select>
+              <br/> 
+              <span id="discountText">Rabat:</span>
+              <input type="text" id="discount">
+              <button id="checkDiscount">ok</button>
+              <br/>
+              <div id="error"></div>
+        </div>
+      
+        <div id="Apply"><button id="applyButton">Potwierdz zamówienie</button></div> 
+        <div id="footer">App created and designed by Bartosz Fijołek & Jakub Błaszczyk | All rights reserved ®</div>
+    </div>
+</body>
+</html>
