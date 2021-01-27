@@ -12,6 +12,9 @@ const checkDiscount = document.querySelector('#checkDiscount');
 const errorDiv = document.querySelector('#error');
 const MENU_API_URL='https://kitchen-side-app.herokuapp.com/menu';
 const SEND_ORDER_API_URL = 'https://kitchen-side-app.herokuapp.com/send-order';
+
+//
+
 let menuData;
 fetch(MENU_API_URL).then((res) => {
     return res.json();
@@ -23,6 +26,9 @@ fetch(MENU_API_URL).then((res) => {
 
     createMenu(menuData);
   });
+
+//resetowanie zamowienia
+
 const restartOrder=()=>{
     let newOrder = menuData;
 
@@ -248,6 +254,7 @@ ApplyButton.addEventListener("click",()=>{
     sendOrder();
 })
 
+//zmiana motywu na ciemny/jasny
 
 const checkboxSlider = document.querySelector('#sliderBox')
 checkboxSlider.addEventListener('change', function () {
