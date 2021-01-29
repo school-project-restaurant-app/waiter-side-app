@@ -185,7 +185,7 @@ const countBill=()=>{
             checkDiscount.border="none"
             discount.disabled="disabled"
     }
-    else if(discount.value =="rich" && rich<300)
+    else if(discount.value =="rich" && finishCost<300)
     {
         errorDiv.innerHTML = `By skorzystać z tego kuponu musisz wydać conajmniej 300 zł`
     }
